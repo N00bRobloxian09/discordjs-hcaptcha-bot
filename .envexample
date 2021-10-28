@@ -1,0 +1,5 @@
+serverid=discord server id
+roleid=discord verified role id
+token=discord bot token
+hcaptcha_secretkey=hcaptcha secret key https://dashboard.hcaptcha.com/settings
+hcaptcha_sitekey=hcaptcha website key https://dashboard.hcaptcha.com/sites
