@@ -1,0 +1,23 @@
+<html>
+<%- include ('nav.ejs') %>
+<script src="https://hcaptcha.com/1/api.js" async defer></script>
+<body>
+<section class="section">
+  <div class="container">
+  <h1> Verify </h1>
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <form action="" method="POST" id="hcaptcha">
+        <div class="h-captcha" data-sitekey="<%= process.env.hcaptcha_sitekey %>" data-callback="onSubmit"></div>
+      </form>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+      function onSubmit() {
+        document.getElementById("hcaptcha").submit();
+      }
+    </script>
+</body>
+</html>
