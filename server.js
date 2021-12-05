@@ -3,7 +3,6 @@ const path = require('path');
 const app = express();
 const hcaptcha = require('hcaptcha');
 const token = require("./modules/token");
-const dis = require("./modules/discord")
 const bodyParser = require("body-parser");
 
 app.set('views', path.join(__dirname, 'views'));
